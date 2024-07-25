@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/surajbhoji1208/react/issues"
   },
-  "homepage": "https://github.com/surajbhoji1208/react#readme"
+  "homepage": "https://github.com/surajbhoji1208/react#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
