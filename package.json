@@ -1,0 +1,19 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "this is react app",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surajbhoji1208/react.git"
+  },
+  "author": "suraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surajbhoji1208/react/issues"
+  },
+  "homepage": "https://github.com/surajbhoji1208/react#readme"
+}
