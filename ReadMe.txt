@@ -25,3 +25,34 @@ Node_module:   it contain all the code which we fecth form npm
 #ingite ap using parcel
     npm i parcel <source fiel>
     =>npm i parcel index.html
+    it create build 
+    it create local server
+    HMR = hot module replecement 
+    it used file wathing algo -which is written in c++ 
+    it will also do image optimization 
+    it will do minification file while production build 
+    it will bundle all the file 
+    it compress the file 
+    it will do code spliting 
+    differentiat bunddling -to support older Browser 
+    it give better error suggestions 
+    it give option to host app on https 
+    it do tree shaking -removed unused code for us 
+npm and npx 
+     npm is installing the package 
+     npx is executing the package
+
+CDN link is not good way to bring react into project 
+    fetching from cdn is take costly operations 
+    it keep changing the version based on url 
+Install react - npm install react
+Install react DOM-npm install react-dom
+
+Browser dont no the import that why we need to tell it by adding attibut type="module" in script tag
+
+Create production build 
+    npx parcel build index.html
+
+Browser list 
+    its a NPM package that need some configuration to run code on old brouser
+    add it to package.json ,it take array of Browser
