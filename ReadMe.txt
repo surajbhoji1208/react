@@ -56,3 +56,15 @@ Create production build
 Browser list 
     its a NPM package that need some configuration to run code on old brouser
     add it to package.json ,it take array of Browser
+
+************episod 3 laying the foundation**********
+JSX:    it is js syntax which is easier to create react elements
+        jsx is not part of react 
+        we can write react without jsx 
+        Browser does not understand jsx 
+        pracel is doing the job behind the sence(this trinsfile befor it reaches to js engine)
+        parcel used bebel to transfile the jsx to js(its package used by  parcel)
+        jsx code is transfile to react.CreateElement=>js obj=>render
+        in jsx instead of give class it should given as className 
+        if u gave attributs then u have to give in camal case 
+        if there is multiple line then wrap it in round brackets  dont neeed for single line 
