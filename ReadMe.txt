@@ -68,3 +68,11 @@ JSX:    it is js syntax which is easier to create react elements
         in jsx instead of give class it should given as className 
         if u gave attributs then u have to give in camal case 
         if there is multiple line then wrap it in round brackets  dont neeed for single line 
+    
+React components : everything in react is a component
+                   there are two type 1) class based comp(old way) 2) functional comp(new way)
+React functional comp: it is just a normal js fun
+                       fun name should be capital latter
+                       root.render<comp/> (this is how we render the component)
+                       if we call comp inside a com it called component composition
+                       if we put {} insid jsx we can run any fun inside this  {}
