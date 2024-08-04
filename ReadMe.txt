@@ -76,3 +76,11 @@ React functional comp: it is just a normal js fun
                        root.render<comp/> (this is how we render the component)
                        if we call comp inside a com it called component composition
                        if we put {} insid jsx we can run any fun inside this  {}
+Style: u can give Style using js obj
+
+Props:property which is somthing that u can pass to component 
+      this are just args to a function 
+confict driven ui: based on backend responce changing the ui property 
+
+for loop: while using for loop need to give key for components bcose if we didnt give the key then react render whole dom aggain for new component
+        dont use index as key 
