@@ -84,3 +84,12 @@ confict driven ui: based on backend responce changing the ui property
 
 for loop: while using for loop need to give key for components bcose if we didnt give the key then react render whole dom aggain for new component
         dont use index as key 
+
+*****************************React Hooks*************************************episod 5
+
+there are two types of export and inport
+-Default export/import =     export Default <nane>
+-                             import name form "path"
+Named export inport  =       export const <name>
+                             import name form "path"
+
