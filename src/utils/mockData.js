@@ -3,7 +3,7 @@ const resData = [
         data: {
             id:1,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -14,7 +14,7 @@ const resData = [
         data: {
             id:2,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -23,7 +23,7 @@ const resData = [
         data: {
             id:3,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -34,7 +34,7 @@ const resData = [
         data: {
             id:4,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -44,9 +44,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:5,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -56,9 +56,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:6,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating:2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -68,9 +68,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:7,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -81,9 +81,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:8,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -93,9 +93,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:9,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -105,9 +105,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:10,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -116,9 +116,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:11,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -128,9 +128,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:12,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating:  2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -140,9 +140,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:13,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -152,9 +152,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:14,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating: 2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20
@@ -164,9 +164,9 @@ const resData = [
     {
 
         data: {
-            id:4,
+            id:16,
             name: "sanju biriyani",
-            avgRating: "2.5",
+            avgRating:2.5,
             cuisines: ["byriyani", 'shoroma'],
             costForTwo: 12,
             deleveryTime: 20

@@ -92,4 +92,26 @@ there are two types of export and inport
 -                             import name form "path"
 Named export inport  =       export const <name>
                              import name form "path"
+Event Handlers: Onclick=> it take callback function
+State variable: this is supper powerfull variableS 
+                for that we use hooks which is known as usesState
+                it is a normal js function 
+                two main hooks
+                useState()- used to generate supper powerfull state variable in react
+                            it maintain the state of component
+                            const [varName] = useState([]) we can pass default value insid fun
+                            to update state it take fun as value in array const [varName,fun] = usesState()
+                            whenever state variable update react rerender the component
+                useEffect()-
+
+React algoridam(behinde the sence):
+        react used reconselation algoridam(react fibar)
+        in react 16 new algoridam come to update the dom called react fiber
+        whenever changes in ui is known as reconselation
+        react dom is all tags <div> <h1>...
+        virtual dom is representation of ectual dom
+        in react elements are objects and vertual dom is those objects 
+        vertual dom is just normal js object 
+    diff algoridam
+        it find the diff between update vertual dom and previouse virtual dom
 
