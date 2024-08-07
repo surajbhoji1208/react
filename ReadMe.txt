@@ -102,7 +102,9 @@ State variable: this is supper powerfull variableS
                             const [varName] = useState([]) we can pass default value insid fun
                             to update state it take fun as value in array const [varName,fun] = usesState()
                             whenever state variable update react rerender the component
-                useEffect()-
+                useEffect()- It take two args 1st is arrow fun(call back fun ) 2nd is dipendancey array 
+                             call back fun is called after your component get renderd
+                             
 
 React algoridam(behinde the sence):
         react used reconselation algoridam(react fibar)
@@ -114,4 +116,8 @@ React algoridam(behinde the sence):
         vertual dom is just normal js object 
     diff algoridam
         it find the diff between update vertual dom and previouse virtual dom
+
+********************API CALL***********EPISOD6************
+Page Load=>Render=>API=>render
+
 
