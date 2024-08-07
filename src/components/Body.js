@@ -1,8 +1,9 @@
 import RestorentCard from "./RestorentCard";
 import { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
-  const [listOfRestorents, setListOfRestorent] = useState();
+  const [listOfRestorents, setListOfRestorent] = useState([]);
   useEffect(() => {
     fetchData();
   }, [])
@@ -12,6 +13,11 @@ const Body = () => {
     const mainData = join.data.cards[4].card.card.gridElements.infoWithStyle.restaurants.map(res => res.info)
     setListOfRestorent(mainData)
   };
+
+  if(listOfRestorents.length == 0)
+  {
+    return <Shimmer></Shimmer>
+  }
   return (
     <div className="body">
       <div className="filter">
