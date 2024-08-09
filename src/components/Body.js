@@ -4,6 +4,8 @@ import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [listOfRestorents, setListOfRestorent] = useState([]);
+  const [listOfRestorentsDmy, setListOfRestorentDmy] = useState([]);
+  const [searchText,setSearchText] = useState("")
   useEffect(() => {
     fetchData();
   }, [])
@@ -12,6 +14,7 @@ const Body = () => {
     const join = await data.json()
     const mainData = join.data.cards[4].card.card.gridElements.infoWithStyle.restaurants.map(res => res.info)
     setListOfRestorent(mainData)
+    setListOfRestorentDmy(mainData)
   };
 
   if(listOfRestorents.length == 0)
@@ -21,20 +24,32 @@ const Body = () => {
   return (
     <div className="body">
       <div className="filter">
+        <div className="search">
+          <input type="text" className="search-box" value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
+          <button className="search-btn"
+           onClick={() => {
+            const filterData = listOfRestorents.filter((res) =>
+              res.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())
+            );
+            setListOfRestorentDmy(filterData);
+          }} 
+          >Search</button>
+
+        </div>
         <button
           className="filter-btn"
           onClick={() => {
-            const filtereData = listOfRestorents.filter(
-              // (res) => res.data.avgRating > 2.5
+            const filtereData = listOfRestorentsDmy.filter(
+              (res) => res.avgRating > 4.3
             );
-            setListOfRestorent(filtereData);
+            setListOfRestorentDmy(filtereData);
           }}
         >
           To rated restorent
         </button>
       </div>
       <div className="res-container">
-        {listOfRestorents?.map((res) => (
+        {listOfRestorentsDmy?.map((res) => (
           <RestorentCard key={res.id} resData={res} />
         ))}
       </div>
