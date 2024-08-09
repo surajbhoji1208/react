@@ -102,8 +102,12 @@ State variable: this is supper powerfull variableS
                             const [varName] = useState([]) we can pass default value insid fun
                             to update state it take fun as value in array const [varName,fun] = usesState()
                             whenever state variable update react rerender the component
-                useEffect()- It take two args 1st is arrow fun(call back fun ) 2nd is dipendancey array 
+                useEffect()- It take two args 1st is arrow fun(call back fun ) 2nd is dipendancey array(optinal) 
                              call back fun is called after your component get renderd
+                             dependencies array changes the behevier of ther render
+                             if there is no dependencies array it call every render
+                             if dependencies array is empty then useEffect called on only initial render
+                             if there something inside dependencies array then it only called dependencies changes
                              
 
 React algoridam(behinde the sence):
@@ -119,5 +123,14 @@ React algoridam(behinde the sence):
 
 ********************API CALL***********EPISOD6************
 Page Load=>Render=>API=>render
+
+********************ROUTING***********EPISOD7************
+NPM I REACT-ROUTER-DOM
+create routing configuration  inside app.js
+use createBrowserRouter(configuration),RouterProvider(component)
+this is give one imp hooks {userouteError}
+we show specific detail error on page using thi hook
+
+
 
 
