@@ -113,12 +113,12 @@ State variable: this is supper powerfull variableS
 React algoridam(behinde the sence):
         react used reconselation algoridam(react fibar)
         in react 16 new algoridam come to update the dom called react fiber
-        whenever changes in ui is known as reconselation
+        whenever changes in ui is known as reconciliation
         react dom is all tags <div> <h1>...
-        virtual dom is representation of ectual dom
-        in react elements are objects and vertual dom is those objects 
-        vertual dom is just normal js object 
-    diff algoridam
+        virtual dom is representation of equal dom
+        in react elements are objects and virtual dom is those objects 
+        virtual dom is just normal js object 
+    diff algorithm
         it find the diff between update vertual dom and previouse virtual dom
 
 ********************API CALL***********EPISOD6************
@@ -128,9 +128,12 @@ Page Load=>Render=>API=>render
 NPM I REACT-ROUTER-DOM
 create routing configuration  inside app.js
 use createBrowserRouter(configuration),RouterProvider(component)
-this is give one imp hooks {userouteError}
+this is give one imp hooks {userRouteError}
 we show specific detail error on page using thi hook
 
-
+Children Rout:- 
+            outlet component is used to load the Children 
+            never use a <a> tag for routing  because its refreshing the page
+            react give {link} component to this 
 
 
