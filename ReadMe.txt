@@ -138,3 +138,18 @@ Children Rout:-
 useParams: this is hook given by react router dom
 
 
+********************CLASS BASED COMPONENTS***********EPISOD 8************
+its a older way of creating compoent in react 
+to create class extend js class with React.Compoent
+now this class has render() inside it which retrun peace of jsx
+to revice a props in class create constractore and need to call supper key with passing props
+constructor(props){supper(props)}
+why we alway have to use supper?
+
+state and local variabl inside class
+    to do so use this.state
+    this is big objest which contain all the state variabl
+    never update state variabl directly 
+    react give this.setState() to update the state variabl inside this we pass obj whic contain updated value
+
+
