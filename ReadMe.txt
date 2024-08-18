@@ -135,5 +135,6 @@ Children Rout:-
             outlet component is used to load the Children 
             never use a <a> tag for routing  because its refreshing the page
             react give {link} component to this 
+useParams: this is hook given by react router dom
 
 
