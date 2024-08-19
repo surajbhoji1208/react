@@ -146,10 +146,38 @@ to revice a props in class create constractore and need to call supper key with 
 constructor(props){supper(props)}
 why we alway have to use supper?
 
-state and local variabl inside class
+state and local variable inside class
     to do so use this.state
-    this is big objest which contain all the state variabl
-    never update state variabl directly 
-    react give this.setState() to update the state variabl inside this we pass obj whic contain updated value
+    this is big object which contain all the state variable
+    never update state variable directly 
+    react give this.setState() to update the state variable inside this we pass obj which contain updated value
+
+What is life cycle of react class 
+    -Template is get rendered line by line whenever it sees any class component in parent comp it started loading that class components
+    -Then instance of class get created and constructor get loaded first
+    -After constructor render() is called  
+
+ComponentDidMount()=> when the component is loaded into dom then this method get called, it is called after render method 
+                      -this method used for api call
+                      -when there parent child relation then the life cycle is
+                        parent =>constructor
+                                render()
+                                child=>
+                                    constructor
+                                    render()
+                                    ComponentDidMount()
+                                ComponentDidMount()    
+                        -When there is multiple behavior changes 
+                         https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+                -When the component is mounted it is mounted 2 phases 
+                1)render phases                   
+                2)commit phase 
+                -1st constructor is called then render is called(render phase)
+                -then react update the dom
+                -then componentDidMount get called
+                -form multiple child react optimize render and commit phase it batch the render phase and then it batch thee commit phase
+                -thats why react call componentDidMount after all child get rendered 
+     
 
 
