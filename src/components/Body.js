@@ -2,6 +2,7 @@ import RestorentCard from "./RestorentCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom"
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [listOfRestorents, setListOfRestorent] = useState([]);
@@ -17,6 +18,13 @@ const Body = () => {
     setListOfRestorent(mainData)
     setListOfRestorentDmy(mainData)
   };
+
+  const onlineStatus = useOnlineStatus()
+
+  if(onlineStatus == false)
+  {
+    return <h1>you are offline now, please check your internat connection</h1>
+  }
 
   if(listOfRestorents.length == 0)
   {

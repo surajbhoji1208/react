@@ -197,3 +197,17 @@ ComponentDidMount()=> when the component is loaded into dom then this method get
 why we cant make async in useEffect()?
 
 
+*********************************EPISODE 9******************************************************************
+
+Custom Hooks=>
+    always start name with 'use'(not mandatory)
+    it is an normal js function
+    inside that fun use all hooks of react
+
+App Chunking=> 
+    this is process where app is broken down into smaller peace 
+    also known as code spiting,dynamic bundling, lazy loading ,on demand loading
+    react give lazy() to load component lazily
+    it take callback fun eg lazy(()={import("path")})
+    rap those component with suspense component
+
