@@ -178,6 +178,22 @@ ComponentDidMount()=> when the component is loaded into dom then this method get
                 -then componentDidMount get called
                 -form multiple child react optimize render and commit phase it batch the render phase and then it batch thee commit phase
                 -thats why react call componentDidMount after all child get rendered 
-     
+
+                Mounting Phase=>
+                    constructor called
+                    component render
+                    Update dom with dommy data 
+                    componentDidMount get called 
+                Updating Phase=>
+                    when we do set state updating phase start
+                    set state update the state variable 
+                    react trigger render once again 
+                    react update dom
+                    then componentDidUpdate called=at the end   
+                Unmounting phase=>
+                    there is function called componentWillUnmount() 
+                    this is called when component destroyed 
+
+why we cant make async in useEffect()?
 
 
