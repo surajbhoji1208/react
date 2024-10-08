@@ -211,9 +211,16 @@ App Chunking=>
     it take callback fun eg lazy(()={import("path")})
     rap those component with suspense component
 
-    *************************Episod 10***************************************
+    *************************Episode 10***************************************
     Sass Scss
         sass add some supper power to css
         tailwind css uses postCSS to transfer css with js
         parser used postCSS to read tailwind css 
 
+
+    *************************Episode 11***************************************
+Higher Order component=>
+    it is a fun which takes a component and return a component
+    it takes a component and add extra feature into it and give it back 
+Controlled and Uncontrolled Component
+    

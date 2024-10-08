@@ -1,4 +1,4 @@
-import RestorentCard from "./RestorentCard";
+import RestorentCard,{withPromotedLabel, withPromotedLabel} from "./RestorentCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -8,6 +8,8 @@ const Body = () => {
   const [listOfRestorents, setListOfRestorent] = useState([]);
   const [listOfRestorentsDmy, setListOfRestorentDmy] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const RestorentCardPromoted =  withPromotedLabel(RestorentCard)
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -22,8 +24,10 @@ const Body = () => {
       );
     setListOfRestorent(mainData);
     setListOfRestorentDmy(mainData);
+    console.log(mainData);
   };
 
+  
   const onlineStatus = useOnlineStatus();
 
   if (onlineStatus == false) {
@@ -80,8 +84,8 @@ const Body = () => {
       <div className="res-container flex flex-wrap  ">
         {listOfRestorentsDmy?.map((res) => (
           <Link key={res.id} to={"/restaurant/" + res.id}>
-            {" "}
-            <RestorentCard resData={res} />
+            {res.isOpen? <RestorentCardPromoted resData={res}></RestorentCardPromoted>: <RestorentCard resData={res} />}
+           
           </Link>
         ))}
       </div>

@@ -14,4 +14,18 @@ const RestorentCard = (prop)=>{
     )
   }
 
+  //higher order component
+  export const withPromotedLabel = (RestorentCard)=>{
+    return(props)=>{
+      return(
+        <div>
+          <label className="absolute bg-black text-white m-2 y-2 rounded-lg">
+            Promoted
+          </label>
+          <RestorentCard {...props}></RestorentCard>
+        </div>
+      )
+    }
+  } 
+
   export default RestorentCard
