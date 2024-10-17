@@ -223,4 +223,8 @@ Higher Order component=>
     it is a fun which takes a component and return a component
     it takes a component and add extra feature into it and give it back 
 Controlled and Uncontrolled Component
+    parent component is controlling childe component 
+    if child component has its own state then it is Uncontrolled component 
+    it is not possible to modify state variable of parent directly but it can b possible indirectly 
+    this is called lifting state up (read it more form react doc)
     
