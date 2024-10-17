@@ -227,4 +227,9 @@ Controlled and Uncontrolled Component
     if child component has its own state then it is Uncontrolled component 
     it is not possible to modify state variable of parent directly but it can b possible indirectly 
     this is called lifting state up (read it more form react doc)
-    
+Props drilling 
+    react has one way data flow, it flow top to bottom(parent to child )
+    eg there is relation parent=>child1->child2
+    here if we want to pass data to child 2 form from parent need to pass to child one this is called props drilling 
+    to resolve this prop drilling problem react give us something known "as react context"
+    accessing the context in class base component is diff  use <context.consumer><context.consumer>
