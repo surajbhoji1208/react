@@ -233,3 +233,5 @@ Props drilling
     here if we want to pass data to child 2 form from parent need to pass to child one this is called props drilling 
     to resolve this prop drilling problem react give us something known "as react context"
     accessing the context in class base component is diff  use <context.consumer><context.consumer>
+    to set new value to context use `<context.provider value={{name:newVal}}> componentName</context.provider>`
+    what is difference between redux and context store 

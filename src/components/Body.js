@@ -1,14 +1,20 @@
 import RestorentCard,{withPromotedLabel, withPromotedLabel} from "./RestorentCard";
-import { useEffect, useState } from "react";
+import { useEffect, useState,useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import {UserContext} from "../utils/UserContext"
+
 
 const Body = () => {
   const [listOfRestorents, setListOfRestorent] = useState([]);
   const [listOfRestorentsDmy, setListOfRestorentDmy] = useState([]);
   const [searchText, setSearchText] = useState("");
   const RestorentCardPromoted =  withPromotedLabel(RestorentCard)
+
+  /**user context manupulate */
+  const {userName,setUserName} = useContext(UserContext)
+
 
   useEffect(() => {
     fetchData();
@@ -44,7 +50,7 @@ const Body = () => {
          <div>
          <input
             type="text"
-            className="search-box border-solid border-black"
+            className="border search-box border-solid border-black"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
@@ -77,6 +83,17 @@ const Body = () => {
             >
               To rated restorent
             </button>
+           </div>
+           <div>
+
+           <input
+            type="text"
+            className="border search-box border-solid border-black m-6"
+            value={userName}
+            onChange={(e) => {
+              setUserName(e.target.value);
+            }}
+          />
            </div>
      
         </div>
