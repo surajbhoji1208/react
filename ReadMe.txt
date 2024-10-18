@@ -235,3 +235,21 @@ Props drilling
     accessing the context in class base component is diff  use <context.consumer><context.consumer>
     to set new value to context use `<context.provider value={{name:newVal}}> componentName</context.provider>`
     what is difference between redux and context store 
+
+    *************************Episode 12***************************************
+redux   
+    redux work on the data layer 
+    redux offer easy debugging 
+        redux is big obj
+        multiple slices are present inside that object 
+        if we want to cart data in redux we can create separate slice for it 
+    Add data=>    
+        whenever we want to modify the slice it can not be done directly
+        from particular event "dispatch action" this action called an "function"  and that function internally  modify the slice 
+        that function is basically known as reducer  
+    Read data=>
+        from read the data from the slice of redux store we use something known as "selector"
+        we use selector to read the data from store and it modify our react component
+        this phenomena is know as subscribing to the store 
+
+        ![Alt text](Images/redux.png)
