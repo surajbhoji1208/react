@@ -253,3 +253,11 @@ redux
         this phenomena is know as subscribing to the store 
 
         ![Alt text](react/Image/redux.png)
+
+    use:
+        -Install @reduxjs/toolkit and react-reducx
+        -Build store
+        -Connect store to app
+        -Slice(cartSlice)
+        -dispatch(action)
+        -selector    

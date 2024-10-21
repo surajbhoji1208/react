@@ -8,6 +8,8 @@ import Contact from "./components/Contact"
 import Error from "./components/Error";
 import RestorentMenu from "./components/RestorentMenu";
 import { UserContext } from "./utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 
 const AppLayout = ()=>{
@@ -23,12 +25,14 @@ const AppLayout = ()=>{
     },[])
 
     return (
+      <Provider store={appStore}>
       <UserContext.Provider value={{ userName: userName ,setUserName}}>
       <div className="app">
         <Header />
         <Outlet />
       </div>
     </UserContext.Provider>
+    </Provider>
     );
 }
 
