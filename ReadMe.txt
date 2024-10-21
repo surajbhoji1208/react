@@ -252,6 +252,6 @@ redux
         we use selector to read the data from store and it modify our react component
         this phenomena is know as subscribing to the store 
 
-        ![Alt text](https://github.com/surajbhoji1208/react/edit/react/Image/redux.png)
+        ![Alt text](https://github.com/surajbhoji1208/react/blob/master/Image/redux.png)
 
 
