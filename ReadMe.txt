@@ -260,4 +260,18 @@ redux
         -Connect store to app
         -Slice(cartSlice)
         -dispatch(action)
-        -selector    
+        -selector  
+    reducer:
+        it is combination of small reducers
+        redux toolkit uses immer BTS  
+js question 
+    <button onClick={handleAdd}></button>
+    <button onClick={handleAdd(data)}></button>
+    <button onClick={()=>handleAdd(data)}></button>
+    explain this 3 diff function call on button click
+
+    =>1.handleAdd is passed as a reference. The function handleAdd will be called when the button is clicked, but it won't be executed until that click happens.
+      2.handleAdd(data) is executed immediately as the page renders. This is because you are invoking the function rather than passing its reference.
+      3.This syntax creates a new function using an arrow function. The handleAdd(data) function is wrapped in an anonymous function (()=>), which will only be executed when the button is clicked.
+
+    
