@@ -274,4 +274,38 @@ js question
       2.handleAdd(data) is executed immediately as the page renders. This is because you are invoking the function rather than passing its reference.
       3.This syntax creates a new function using an arrow function. The handleAdd(data) function is wrapped in an anonymous function (()=>), which will only be executed when the button is clicked.
 
-    
+
+
+      *************************Episode 13***************************************
+    Type of testing (developer)
+        -Unit testing
+            u test ur react component in isolation 
+            testing small unit of application 
+        -Integration testing
+            testing the integration of component
+        -End to End Testing 
+            in this testing we test as soon as user enter to site upto it changes the site
+        
+        #React-testing-library
+            it build in top up on tom testing library
+            it uses jest - a lightweight js framework  
+             npm i -D @testing-library/react
+              npm i -D jest
+            when u use babel then need to install additional dependencies
+                npm install --save-dev babel-jest @babel/core @babel/preset-env
+                configure this with creating babel.config.js
+            parcel already uses babel and parcel has its won config for babel 
+            now we are trying to add extra config so it will going to confuse 
+            there for we have to change parcels behavior 
+            to do this create .parcelrc file and past following code
+                {
+                     "extends": "@parcel/config-default",
+                     "transformers": {
+                       "*.{js,mjs,jsx,cjs,ts,tsx}": [
+                         "@parcel/transformer-js",
+                         "@parcel/transformer-react-refresh-wrap"
+                       ]
+                     }
+                }
+
+  
