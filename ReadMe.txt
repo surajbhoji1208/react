@@ -290,7 +290,7 @@ js question
             it build in top up on tom testing library
             it uses jest - a lightweight js framework  
              npm i -D @testing-library/react
-              npm i -D jest
+             npm i -D jest
             when u use babel then need to install additional dependencies
                 npm install --save-dev babel-jest @babel/core @babel/preset-env
                 configure this with creating babel.config.js
@@ -307,5 +307,11 @@ js question
                        ]
                      }
                 }
+            Writing jest configuration for testing
+                npx jest --init (it will create new file )
+                select js dom for testing env
+                #js dome: when u run test cases there is no server running there is no Browser they will need env for that we use js dom
+                if jest version is greater than 28 then need to install jest-environment-jsdom separately
+                npm install -D jest-environment-jsdom
 
   
