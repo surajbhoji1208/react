@@ -313,5 +313,9 @@ js question
                 #js dome: when u run test cases there is no server running there is no Browser they will need env for that we use js dom
                 if jest version is greater than 28 then need to install jest-environment-jsdom separately
                 npm install -D jest-environment-jsdom
+            Install @bebel/preset-react - to make jsx work in test
+                add this it into babel config 
+                it help to testing library to convert that jsx code to html
+            Install @testing-library/jest-dom
 
   
