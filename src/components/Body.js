@@ -1,4 +1,4 @@
-import RestorentCard,{withPromotedLabel, withPromotedLabel} from "./RestorentCard";
+import RestorentCard,{withPromotedLabel} from "./RestorentCard";
 import { useEffect, useState,useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -30,7 +30,6 @@ const Body = () => {
       );
     setListOfRestorent(mainData);
     setListOfRestorentDmy(mainData);
-    console.log(mainData);
   };
 
   
@@ -50,6 +49,7 @@ const Body = () => {
          <div>
          <input
             type="text"
+            data-testid="searchInput"
             className="border search-box border-solid border-black"
             value={searchText}
             onChange={(e) => {

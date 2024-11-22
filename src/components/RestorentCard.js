@@ -1,11 +1,10 @@
 import { CDN_URL } from "../utils/constant"
 const RestorentCard = (prop)=>{
-  console.log("prop==>",prop);
   
     const {resData} = prop
     const {name,avgRating,cuisines,costForTwo,sla,cloudinaryImageId} = resData
     return (
-      <div className="res-card m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200">
+      <div data-testid="resCards" className="res-card m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200">
           <img className="res-logo" src={CDN_URL+cloudinaryImageId}></img>
         <h1 className="font-bold py-4 text-lg">{name}</h1>
         <h4>{cuisines?.join(',')}</h4>

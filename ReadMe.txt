@@ -318,4 +318,6 @@ js question
                 it help to testing library to convert that jsx code to html
             Install @testing-library/jest-dom
 
+Note: add " "watch-jest":"jest --watch" in json to watch test(it will check file change and run automatically)
+
   
