@@ -97,7 +97,7 @@ State variable: this is supper powerfull variableS
                 for that we use hooks which is known as usesState
                 it is a normal js function 
                 two main hooks
-                useState()- used to generate supper powerfull state variable in react
+                useState()- used to generate supper powerful state variable in react
                             it maintain the state of component
                             const [varName] = useState([]) we can pass default value insid fun
                             to update state it take fun as value in array const [varName,fun] = usesState()
@@ -108,6 +108,9 @@ State variable: this is supper powerfull variableS
                              if there is no dependencies array it call every render
                              if dependencies array is empty then useEffect called on only initial render
                              if there something inside dependencies array then it only called dependencies changes
+                useRef()-useRef does not re-render components
+                         useRef can store mutable values (like a variable) that don’t cause the component to re-render when updated.
+                         useRef to directly reference a DOM element in a functional component.
                              
 
 React algoridam(behinde the sence):
